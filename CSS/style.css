@@ -1,19 +1,24 @@
 :root{
-    --cor-primaria: #a5227e;
-    --cor-secundaria: #a95e2c;
-    --cor-destaque: #cbf20b;
-    --cor-fundo-destaque: #7e8bf1;
+    --cor-base: #333;
+    --cor-menu: #036;
+}
+.sacola {
+   background: url(../img/sacola.png) no-repeat top right;
+   font-size: 14px;
+   padding-right: 35px;
+   text-align: right;
+   width: 140px;    
 }
 
-h1{
-    color: var(--cor-primaria);    
+.menu-opcoes ul {
+    font-size: 15px;
 }
 
-h2{
-    color: var(--cor-secundaria);
+.menu-opcoes a {
+    color: var(--cor-menu);
 }
 
-p{
-    color: var(--cor-destaque);
-    background-color: var(--cor-fundo-destaque);
+body {
+    color: var(--cor-base);
+    font-family: "Roboto", sans-serif;
 }
