@@ -1,2 +1,5 @@
-# Labs_Front
-<h1>Repositorio do DJ Jorginho que vai ser utilizado para a disciplina de front end</h1>
+# LABS_FRONT
+<h1>Programação Front-end</h1>
+Repositório da disciplina de <em>Programaçâo 
+Front-end Carlos</em>.
+
