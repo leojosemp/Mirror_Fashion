@@ -1,5 +1,5 @@
 .grid-container {
-    display:  grid;
+    display: grid;
     grid-template-columns: auto;
     gap: 10px;
 }
@@ -10,10 +10,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-fieldset { 
+fieldset {
     margin-bottom: 10px;
     background-color: antiquewhite;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 fieldset input, select {
@@ -34,30 +34,23 @@ fieldset legend {
     font-size: large;
     font-weight: bold;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px;
-
 }
 
 .grid-button-container input[type=submit] {
-
     background-color: blue;
-
-}
+} 
 
 .grid-button-container input[type=reset] {
-
     background-color: orangered;
-
-}
+} 
 
 .grid-header-container {
     display: grid;
     grid-template-areas: 'top-left top-right';
     border-bottom: rgb(165, 155, 141) 5px solid;
     margin-bottom: 5px;
-    
-
 }
 
 .top-right {
@@ -67,7 +60,4 @@ fieldset legend {
 
 .top-left {
     grid-area: top-left;
-
 }
-
-

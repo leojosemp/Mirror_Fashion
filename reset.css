@@ -22,9 +22,6 @@ html {
 }
 
 /* Reset de lista */
-ol, ul {
-    list-style: none;
-}
 
 /* Reset de hyperlink */
 a {
@@ -65,5 +62,3 @@ input, textarea, select {
 }
 
 /* Outros resets de elementos podem ser adicionados conforme necessário */
-
-
