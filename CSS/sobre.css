@@ -1,28 +1,32 @@
 :root{
-    --cor-base: #333;
-    --cor-fundo-img: #f2eded;
+    --cor-base: #333333;
+    --cor-fundo-img: #f2eded ;
     --cor-borda-img: #ccc;
-    --cor-titulo-especial: #898f95;
-    --cor-rodape: #777;
 }
+
+
+
 body{
     color: var(--cor-base);
-    font-family: "Roboto", sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-weight: 400;
-    font-style: normal;      
+    font-style: normal;
 }
 
 h1{
-    background-image: url(../img/sobre-background.jpg);
+    background-image: url(../img/sobre-background.jpg) ;
     padding: 10px;
+    text-align: center;
 }
 
 h2{
-    border-bottom: 2px groove var(--cor-base); 
-    margin-top: 30px;   
+    color: var(--cor-base);
+    border-bottom: 2px groove #333333;
+    margin-top: 30px; 
 }
 
 figure{
+
     background-color: var(--cor-fundo-img);
     border: 1px solid var(--cor-borda-img);
     text-align: center;
@@ -37,45 +41,34 @@ figcaption{
 
 p{
     padding: 0 45px;
-    text-indent: 25px;
-    text-align: justify;
+    text-indent: 15px;
 }
 
 #centro-distribuicao{
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 550px;
+
 }
 
-.rodape {
-    color: var(--cor-rodape);
+.rodape{
+    color: #777;
     margin: 30px 0;
     padding: 30px 0;
 }
 
-.rodape img {
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.rodape img{
     margin-right: 30px;
     vertical-align: middle;
     width: 94px;
 }
 
-#familia-pelho{
-    margin: 0 0 10px 10px;
-    float: right;
-}
-
 .container {
     margin: 0 auto;
     width: 90%;
-}
-
-p::first-letter {
-    font-weight: bold;
-}
-
-h1 + p {
-   text-indent: 0; 
-}
-
-p::first-line {
-    font-variant: small-caps;
 }
