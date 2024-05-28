@@ -12,10 +12,10 @@
     <header class="grid-header-container">
         <div class="top-left">
             <h1>Faça seu cadastro!</h1>
-            <h2>Cadastre-se para as promoções!</h2>
+            <h2>Cadastre-se para promoções!</h2>
         </div>
         <div class="top-right">
-            <img src="img/logocadastro.jpg" alt="logo de cadastro">
+            <img src="/img/icone_cadastro.jpg" alt="Ícone de Cadastro">
         </div>
     </header>
     <form action="">
@@ -27,30 +27,29 @@
                 <label for="email">E-mail</label>
                 <input type="email" name="email" required>
                 <label for="data">Data de Nascimento</label>
-                <input type="date" name="data" required>
-                <label for="RG">RG</label>
-                <input type="text" name="RG" maxlength="13" minlength="4" title="Coloque seu RG completo">
-                <label for="CPF">CPF</label>
-                <input type="text" name="CPF" pattern="\d{3}\.\d{3}\.\d{3}\-\{2}" maxlength="14"
-                    placeholder="_____._____._____-____" title="Digite apenas números">
+                <input type="date" name="data">
+                <label for="rg">RG</label>
+                <input type="text" name="rg" maxlength="13" minlength="4" title="Coloque seu RG completo." required>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="CPF no formato 000.000.00-00"
+                    required>
             </div>
         </fieldset>
-
         <fieldset>
-            <legend>Edereço</legend>
+            <legend>Endereço</legend>
             <div class="grid-container">
-                <label for="Rua">Rua</label>
-                <input type="text" name="Rua">
-                <label for="numero">Numero</label>
+                <label for="rua">Rua</label>
+                <input type="text" name="rua">
+                <label for="numero">Número</label>
                 <input type="number" name="numero">
                 <label for="bairro">Bairro</label>
                 <input type="text" name="bairro">
-                <label for="CEP">CEP</label>
-                <input type="number" name="CEP" pattern="\d{5}-\d{3}" required title="Atenção ao formato solicitado">
-                <label for="Cidade">Cidade</label>
-                <input type="text" name="Cidade">
-                <label for="Estado">Estado</label>
-                <select name="Estados" id="">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" pattern="\d{5}-\d{3}" required>
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade">
+                <label for="estado">Estado</label>
+                <select name="estado">
                     <option value="" selected>Selecione um estado</option>
                     <option value="ac">Acre</option>
                     <option value="al">Alagoas</option>
@@ -83,25 +82,24 @@
             </div>
         </fieldset>
         <fieldset>
-
             <legend>Login</legend>
             <div class="grid-container">
-                <label for="Imagem">Imagem</label>
-                <input type="file" name="Imagem" accept="Image/*" title="Apenas PNG, JPG, BMP, WEBP">
-                <label for="Login">Login</label>
-                <input type="text" name="Login" required>
+                <label for="imagem">Imagem de perfil</label>
+                <input type="file" name="imagem" accept="image/*" title="Apenas PNG, JPG, BMP, WEBP ou GIF">
+                <label for="login">Login</label>
+                <input type="text" name="login" required>
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" minlength="8" required>
-                <label for="senhaConfirma">Confrimar senha</label>
+                <label for="senhaConfirma">Confirmação de Senha</label>
                 <input type="password" name="senhaConfirma" minlength="8" required>
             </div>
         </fieldset>
-
         <div class="grid-button-container">
-            <input type="reset" value="Cancelar" name="BotaoCancelar">
-            <input type="submit" value="Enviar" name="Botão enviar">
+            <input type="reset" value="Cancelar" name="botaoCancelar">
+            <input type="submit" value="Enviar" name="botaoEnviar">
         </div>
     </form>
+    <hr>
 </body>
 
 </html>
